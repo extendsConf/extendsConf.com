@@ -1,11 +1,17 @@
 {
-    "name": "extendsconf/extendsconf.com",
-    "type": "project",
-    "authors": [
-        {
-            "name": "Michael Rog",
-            "email": "michael@michaelrog.com"
-        }
-    ],
-    "require": {}
+	"name": "extendsconf/extendsconf.com",
+	"type": "project",
+	"authors": [
+		{
+			"name": "Michael Rog",
+			"email": "michael@michaelrog.com",
+			"homepage": "https://michaelrog.com"
+		},
+		{
+			"name": "Jalen Davenport",
+			"email": "jalen@jalendport.com",
+			"homepage": "https://jalendport.com"
+		}
+	],
+	"require": {}
 }

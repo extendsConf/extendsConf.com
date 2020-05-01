@@ -8,6 +8,13 @@
 		"email": "michael@michaelrog.com",
 		"url": "https://michaelrog.com"
 	},
+	"contributors": [
+		{
+			"name": "Jalen Davenport",
+			"email": "jalen@jalendport.com",
+			"url": "https://jalendport.com"
+		}
+	],
 	"browserslist": {
 		"production": [
 			"defaults"
