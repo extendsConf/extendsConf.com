@@ -1,0 +1,26 @@
+# ### === .gitignore === ### #
+
+_personal/
+_wip/
+.env
+
+Thumbs.db
+.DS_Store
+.ftpquota
+cgi-bin
+error_log
+log.htm
+
+.idea/
+.sass-cache
+*.swp
+.*~
+npm-debug.log
+node_modules/
+bower_components/
+/vendor/
+
+/web/dist/
+
+!.gitignore
+!*/.gitignore

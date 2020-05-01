@@ -1,0 +1,11 @@
+{
+    "name": "extendsconf/extendsconf.com",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Michael Rog",
+            "email": "michael@michaelrog.com"
+        }
+    ],
+    "require": {}
+}
