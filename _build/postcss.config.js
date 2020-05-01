@@ -59,7 +59,7 @@ module.exports = {
 			}),
 		] : []),
 		require('postcss-preset-env')({
-			autoprefixer: { grid: true },
+			autoprefixer: { grid: false },
 			features: {
 				'nesting-rules': true
 			}

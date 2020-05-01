@@ -130,6 +130,9 @@ settings.tailwindConfig = {
 				'lg': '2.5rem',
 				'xl': '5rem',
 			},
+			lineHeight: {
+				'default': '2.5em'
+			}
 		},
 	},
 };

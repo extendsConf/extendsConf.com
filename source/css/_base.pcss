@@ -3,7 +3,7 @@ html {
 }
 
 body {
-	@apply bg-teal-dark font-mono text-white tracking-wide font-normal;
+	@apply bg-teal-dark font-mono text-white tracking-wide leading-default font-normal;
 	counter-reset: _line;
 }
 
@@ -11,15 +11,15 @@ body {
 	counter-increment: _line;
 	content: counter(_line);
 	border-right: 1px solid;
-	@apply table-cell w-16 pl-4 py-2 text-white-op-1 border-white-op-1;
+	@apply flex-shrink-0 w-16 pl-4 text-white-op-1 border-white-op-1;
 }
 
 .line {
-	@apply table;
+	@apply flex;
 }
 
 .lineText {
-	@apply table-cell px-6 py-2;
+	@apply flex-grow px-6;
 }
 
 .tab {
@@ -27,7 +27,7 @@ body {
 }
 
 input[type=email] {
-	@apply bg-black-op-3 text-cyan p-2 font-bold rounded-sm;
+	@apply bg-black-op-3 text-cyan px-2 font-bold rounded-sm;
 	&::placeholder {
 		@apply font-normal text-white-op-1;
 	}
@@ -37,7 +37,7 @@ input[type=email] {
 }
 
 input[type=submit] {
-	@apply bg-black-op-3 text-white p-2 pr-3 rounded-sm cursor-pointer;
+	@apply bg-black-op-3 text-white pl-2 pr-3 rounded-sm cursor-pointer;
 	&:focus, &:hover {
 		@apply bg-green-op-7;
 	}
