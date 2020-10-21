@@ -26,7 +26,7 @@ body {
 	@apply px-3;
 }
 
-input[type=email] {
+input[type=email], input[type=text] {
 	@apply bg-black-op-3 text-cyan px-2 font-bold rounded-sm;
 	&::placeholder {
 		@apply font-normal text-white-op-1;
@@ -43,7 +43,7 @@ input[type=submit] {
 	}
 }
 
-input:invalid + input[type=submit] {
+input:invalid ~ input[type=submit] {
 	@apply bg-black-op-1 text-white-op-3 cursor-not-allowed;
 	pointer-events: none;
 }

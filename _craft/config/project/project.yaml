@@ -1,0 +1,46 @@
+dateModified: 1603285126
+email:
+  fromEmail: michael@michaelrog.com
+  fromName: ExtendsConf
+  transportType: craft\mail\transportadapters\Sendmail
+plugins:
+  guest-entries:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.1.0
+    settings:
+      enableCsrfProtection: '1'
+      entryVariable: entry
+      sections:
+        __assoc__:
+          -
+            - 02588d11-ee61-4956-b31c-8dbf249010ab
+            -
+              __assoc__:
+                -
+                  - sectionUid
+                  - 02588d11-ee61-4956-b31c-8dbf249010ab
+                -
+                  - allowGuestSubmissions
+                  - '1'
+                -
+                  - enabledByDefault
+                  - '1'
+                -
+                  - runValidation
+                  - ''
+                -
+                  - authorUid
+                  - 7e4c9637-fbb1-43e0-8b92-6a3da4bf70d6
+system:
+  edition: solo
+  live: true
+  name: ExtendsConf
+  schemaVersion: 3.5.13
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

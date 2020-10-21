@@ -1,0 +1,96 @@
+{% set currentSession = craft.entries.section('sessions').order('postDate asc').status(['live', 'pending']).one %}
+
+{% extends '_layout' %}
+
+{% block body %}
+
+    <span class="line"></span>
+
+    <h1 class="line">
+		<span class="lineText font-extrabold">
+			{% verbatim %}{% <span class="text-gold">extends</span> <span class="text-cyan">'Conf'</span> %}{% endverbatim %}
+		</span>
+    </h1>
+
+    <span class="line"></span>
+
+    <p class="line">
+        <span class="lineText">
+            <span class="font-extrabold">Welcome!</span>
+            #extendsConf is an <span class="italic">independent</span> online event for the
+            <a class="underline" href="https://craftcms.com/">Craft CMS</a> community.
+        </span>
+    </p>
+
+    <span class="line"></span>
+
+    <p class="line">
+        <span class="lineText max-w-5xl">
+            Participation in extendsConf is subject to the Craft
+            <a href="https://craftcms.com/docs/3.x/coc.html" class="underline">Code of Conduct</a>,
+            just like contributing anywhere else in the
+            Craft ecosystem: Be friendly, patient, welcoming, considerate, and respectful.
+            We are a community of professionals, and we conduct ourselves professionally.
+            Be kind to others. Do not insult or put down other participants.
+            Harassment and other exclusionary behavior aren’t acceptable.
+            If you don't maintain acceptable conduct, we'll have to remove you from the event.
+            We love yall, and we trust you to keep it classy. &hearts;
+        </span>
+    </p>
+
+    <span class="line"></span>
+
+    <form method="post" accept-charset="UTF-8">
+
+        {{ csrfInput() }}
+        <input type="hidden" name="action" value="guest-entries/save">
+        <input type="hidden" name="sectionUid" value="02588d11-ee61-4956-b31c-8dbf249010ab">
+
+        <div class="line">
+            <div class="lineText py-2">
+                {% verbatim %}
+                {% <span class="text-gold">do</span> register Name
+                <input type="text" name="title" required placeholder="Crafty McCrafterson" size="25" />
+                %}
+                {% endverbatim %}
+            </div>
+        </div>
+
+        <div class="line">
+            <div class="lineText py-2">
+                {% verbatim %}
+                {% <span class="text-gold">do</span> register Email
+                <input type="email" name="fields[email]" required placeholder="crafty@themccraftersons.net" size="25" />
+                %}
+                {% endverbatim %}
+            </div>
+        </div>
+
+        <div class="line">
+            <div class="lineText py-2">
+                {% verbatim %}
+                {% <span class="text-gold">do</span> add TwitterHandle
+                <span class="text-white-op-7">@</span><input class="ml-1" type="text" name="fields[twitterHandle]" placeholder="crafterson42" size="25" />
+                optional
+                %}
+                {% endverbatim %}
+            </div>
+        </div>
+
+        <div class="line">
+            <div class="lineText py-2 font-extrabold">
+                {% verbatim %}
+                {% <span class="text-gold">do</span>
+                <input type="submit" value=":agree">
+                %}
+                {% endverbatim %}
+            </div>
+        </div>
+
+    </form>
+
+    {% for i in range(1,32) %}
+        <span class="line"></span>
+    {% endfor %}
+
+{% endblock %}

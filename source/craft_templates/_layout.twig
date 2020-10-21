@@ -1,0 +1,62 @@
+{% set currentSession = craft.entries.section('sessions').order('postDate asc').status(['live', 'pending']).one %}
+
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <title>extendsConf</title>
+
+    <meta name="description" content="An online 'conference' for the Craft CMS community.">
+    <meta name="author" content="Michael Rog, Jalen Davenport">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="extendsConf">
+    <meta property="og:site_name" content="extendsConf">
+    <meta property="og:description" content="An online 'conference' for the Craft CMS community.">
+    <meta property="og:image" content="https://extendsconf.com/images/preview.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="extendsConf • coming soon">
+    <meta property="og:url" content="https://extendsconf.com/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@extendsConf">
+    <meta name="twitter:image:alt" content="extendsConf • October 21-22, 2020">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png?v=JyBPKnpmon">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png?v=JyBPKnpmon">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png?v=JyBPKnpmon">
+    <link rel="manifest" href="/images/favicons/site.webmanifest?v=JyBPKnpmon">
+    <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg?v=JyBPKnpmon" color="#18354a">
+    <link rel="shortcut icon" href="/images/favicons/favicon.ico?v=JyBPKnpmon">
+    <meta name="apple-mobile-web-app-title" content="extendsConf">
+    <meta name="application-name" content="extendsConf">
+    <meta name="msapplication-TileColor" content="#18354a">
+    <meta name="msapplication-config" content="/images/favicons/browserconfig.xml?v=JyBPKnpmon">
+    <meta name="theme-color" content="#18354a">
+
+    <link rel="stylesheet" href="/dist/site.css">
+
+</head>
+
+<body>
+
+{% block body %}
+{% endblock %}
+
+{% js 'dist/site.js' %}
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3C6DKN9T62"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-3C6DKN9T62');
+</script>
+
+</body>
+</html>

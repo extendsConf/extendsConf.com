@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: e073fb9e-ca19-4e54-b0d0-0248d1b6b028
+handle: zoomUrl
+instructions: ''
+name: 'Zoom URL'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: '1'
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

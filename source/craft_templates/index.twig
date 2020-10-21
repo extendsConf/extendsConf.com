@@ -1,0 +1,133 @@
+{% extends '_layout' %}
+
+{% block body %}
+
+	<span class="line"></span>
+
+	<h1 class="line">
+		<span class="lineText font-extrabold">
+			{% verbatim %}{% <span class="text-gold">extends</span> <span class="text-cyan">'Conf'</span> %}{% endverbatim %}
+		</span>
+	</h1>
+
+	<span class="line"></span>
+	<span class="line">
+		<span class="lineText">
+			&rarr;
+			<a class="bg-white-op-1 hover:bg-white-op-3 inline-block py-2 px-6 rounded-sm" href="{{ url('watch') }}">Watch now!</a>
+		</span>
+
+	</span>
+	<span class="line"></span>
+
+	<p class="line">
+		<span class="lineText">&rarr; an <span class="italic">independent</span> online event for the Craft CMS community</span>
+	</p>
+	<p class="line">
+		<span class="lineText">
+			<span class="tab"></span> <span class="italic">October 21-22</span>
+		</span>
+
+	</p>
+	<p class="line">
+		<span class="lineText italic"><span class="tab"></span> 9am Pacific / 12pm Eastern / 5pm London</span>
+	</p>
+
+	<span class="line"></span>
+
+	<p class="line">
+		<span class="lineText">Featuring:</span>
+	</p>
+	<p class="line">
+		<span class="lineText"><span class="tab"></span> <a href="https://twitter.com/ben_pylo" class="font-extrabold hover:underline">Ben Croker</a> &mdash; Reactive Twig Components with Sprig</span>
+	</p>
+	<p class="line">
+		<span class="lineText"><span class="tab"></span> <a href="https://twitter.com/drifteaur" class="font-extrabold hover:underline">Zoltan Varady</a> &mdash; Smarter Debugging in Craft CMS</span>
+	</p>
+	<p class="line">
+		<span class="lineText"><span class="tab"></span> <a href="https://twitter.com/pixelcave_john" class="font-extrabold hover:underline">John Champ</a> &mdash; Thoughts on Themes & Third-Party Markets</span>
+	</p>
+	<p class="line">
+		<span class="lineText"><span class="tab"></span> <a href="https://twitter.com/mattrambles" class="font-extrabold hover:underline">Matt Stein</a> &mdash; Project Config, for Skeptics</span>
+	</p>
+	<p class="line">
+		<span class="lineText"><span class="tab"></span> <a href="https://marie-manandise.net" class="font-extrabold hover:underline">Marie Manandise</a> &mdash; Accessibility in CMSs... What's stopping us?</span>
+	</p>
+	<p class="line">
+		<span class="lineText"><span class="tab"></span>The First Ever&trade; Craft Developer AMA</span>
+	</p>
+	<p class="line">
+		<span class="lineText"><span class="tab"></span>...and more!</span>
+	</p>
+
+
+	<span class="line"></span>
+
+	<p class="line">
+		<span class="lineText">Questions:</span>
+	</p>
+	<p class="line">
+		<span class="lineText font-extrabold">
+			{% verbatim %}
+            {%
+			<span class="text-gold">do</span> contact
+			<span class="text-cyan">
+				'<a href="mailto:team@extendsconf.com" class="hover:underline">team@extendsconf.com</a>'
+			</span>
+			%}
+            {% endverbatim %}
+		</span>
+	</p>
+
+	<span class="line"></span>
+
+	<p class="line">
+		<span class="lineText">Get announcements:</span>
+	</p>
+
+	<form class="line" action="https://extendsconf.us8.list-manage.com/subscribe/post?u=c7622b8e1f5025331a45dd4ee&amp;id=5cc64eb7af" method="post">
+
+		<span class="lineText font-extrabold">
+			{% verbatim %}
+            {% <span class="text-gold">do</span> subscribe
+			<input type="email" name="EMAIL" required placeholder="your.email@theinter.net" size="25" />
+			<input type="submit" value=":submit">
+			%}
+            {% endverbatim %}
+		</span>
+
+		<!-- 🍯 -->
+		<div style="position: absolute; left: -5000px;" aria-hidden="true">
+			<input type="text" name="b_c7622b8e1f5025331a45dd4ee_5cc64eb7af" tabindex="-1" value="">
+		</div>
+
+	</form>
+
+	<span class="line"></span>
+	<span class="line"></span>
+
+	<p class="line">
+		<span class="lineText italic text-white-op-3">
+			Brought to you by <a href="https://twitter.com/jalendport" class="hover:underline">@jalendport</a>
+			and <a href="https://twitter.com/michaelrog" class="hover:underline">@michaelrog</a>.
+		</span>
+	</p>
+
+	<span class="line"></span>
+	<span class="line"></span>
+	<span class="line"></span>
+	<span class="line"></span>
+	<span class="line"></span>
+	<span class="line"></span>
+	<span class="line"></span>
+	<span class="line"></span>
+	<span class="line"></span>
+	<span class="line"></span>
+	<span class="line"></span>
+	<span class="line"></span>
+	<span class="line"></span>
+	<span class="line"></span>
+	<span class="line"></span>
+	<span class="line"></span>
+
+{% endblock %}

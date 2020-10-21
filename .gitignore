@@ -21,6 +21,7 @@ bower_components/
 /vendor/
 
 /web/dist/
+/web/cpresources/
 
 !.gitignore
 !*/.gitignore
