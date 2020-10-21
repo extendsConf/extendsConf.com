@@ -4,7 +4,7 @@
 
 {% block body %}
 
-    <div class="flex w-full justify-between py-2 leading-none">
+    <div class="flex w-full justify-between py-2 leading-tight">
         <div class="text-left p-4">
             <span class="font-extrabold">
                 {% verbatim%}{% <span class="text-gold">extends</span> <span class="text-cyan">'Conf'</span> %}{% endverbatim %}
@@ -17,11 +17,8 @@
         </div>
     </div>
 
-    <div class="flex justify-end p-4 leading-none bg-white-op-1 space-x-4">
-
-        <a class="bg-white-op-1 hover:bg-white-op-3 py-2 px-6" href="https://discord.gg/ekR5H6s" target="_blank">Join the Chat [Discord]</a>
-        <a class="bg-white-op-1 hover:bg-white-op-3 py-2 px-4 rounded-sm" href="{{ currentSession.zoomUrl }}" target="_blank">Q&A Room [Zoom]</a>
-
+    <div id="banner">
+        {% include 'live/banner' %}
     </div>
 
     <div class="p-6 bg-white-op-3">
@@ -32,6 +29,43 @@
         </div>
     </div>
 
+    <script>
+    // {% set js %}
 
+        window.watchingSessionId = {{ currentSession.id }};
+
+        function refreshBanner()
+        {
+
+            var request = new XMLHttpRequest();
+            request.open('GET', '/live/banner?watching={{ currentSession.id }}', true);
+
+            request.onload = function() {
+                if (this.status >= 200 && this.status < 400) {
+                    // Success!
+                    var resp = this.response;
+                    log("Banner refreshed.");
+                    document.getElementById('banner').innerHTML = resp;
+                } else {
+                    // We reached our target server, but it returned an error
+                    log("Banner... nope.");
+                }
+            };
+
+            request.onerror = function() {
+                // There was a connection error of some sort
+                log("Banner error.");
+            };
+
+            request.send();
+
+        }
+
+        window.setInterval(refreshBanner, 7777);
+
+    // {% endset %}
+    </script>
+
+    {% includeJs js %}
 
 {% endblock %}

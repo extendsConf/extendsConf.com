@@ -1,0 +1,17 @@
+{% set currentSession = craft.entries.section('sessions').order('postDate asc').status(['live', 'pending']).one %}
+{% set watching = craft.app.request.getParam('watching', currentSession.id) %}
+
+<div class="flex justify-end p-4 leading-tight bg-white-op-1 space-x-4">
+
+    {% if watching != currentSession.id %}
+        <a href="{{ url('live') }}" class="text-white bg-red-800 hover:bg-red-700 py-2 px-4 rounded-sm" href="{{ currentSession.zoomUrl }}" target="_blank">LIVE NOW &rarr; {{ currentSession.title }}</a>
+    {% endif %}
+
+    <a class="bg-white-op-1 hover:bg-white-op-3 py-2 px-6" href="https://discord.gg/ekR5H6s" target="_blank">Join the Chat [Discord]</a>
+    <a class="bg-white-op-1 hover:bg-white-op-3 py-2 px-4 rounded-sm" href="{{ currentSession.zoomUrl }}" target="_blank">Q&A Room [Zoom]</a>
+
+</div>
+
+<script>
+    window.currentSessionId = {{ currentSession.id }};
+</script>

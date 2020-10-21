@@ -37,7 +37,7 @@
     <meta name="msapplication-config" content="/images/favicons/browserconfig.xml?v=JyBPKnpmon">
     <meta name="theme-color" content="#18354a">
 
-    <link rel="stylesheet" href="{{ craft.stamp.er('/dist/site.css') }}">
+    <link rel="stylesheet" href="{{ craft.config.devMode ? '/dist/site.css' : craft.stamp.er('/dist/site.css') }}">
 
 </head>
 
@@ -46,7 +46,7 @@
 {% block body %}
 {% endblock %}
 
-{% js craft.stamp.er('/dist/site.js') %}
+{% js craft.config.devMode ? '/dist/site.js' : craft.stamp.er('/dist/site.js') %}
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3C6DKN9T62"></script>
