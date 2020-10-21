@@ -145,12 +145,11 @@ settings.stylelintConfig = {
 
 settings.purgeCssConfig = {
 	paths: [
-		"./web/**/*.{php,html}",
-		"./source/craft_templates/**/*.{twig,html}",
-		"./source/vue/**/*.{vue,html}"
+		"/web/**/*.{php,html}",
+		"/source/craft_templates/**/*.{twig,html}",
+		"/source/vue/**/*.{vue,html}"
 	],
 	whitelist: [
-		"./source/css/components/**/*.{css}"
 	],
 	whitelistPatterns: [],
 	extensions: [
