@@ -20,7 +20,7 @@ node_modules/
 bower_components/
 /vendor/
 
-/web/dist/
+# /web/dist/
 /web/cpresources/
 
 !.gitignore
