@@ -66,7 +66,7 @@ settings.criticalCss = {
 		}
 	],
 	entries: {
-		'index': '',
+		// 'index': '',
 	},
 	ampDimensions: [
 		{
@@ -75,7 +75,7 @@ settings.criticalCss = {
 		}
 	],
 	ampEntries: {
-		'amp-index': '',
+		// 'amp-index': '',
 	}
 };
 
