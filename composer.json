@@ -14,6 +14,7 @@
 		}
 	],
 	"require": {
+		"aelvan/stamp": "^2.1",
 		"craftcms/cms": "^3.5",
 		"craftcms/guest-entries": "^2.3",
 		"vlucas/phpdotenv": "^3.6"

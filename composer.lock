@@ -4,8 +4,61 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c4697d0e0471b1a0e98fcf34bf6ef41d",
+    "content-hash": "a5090b3804e5ae8913d83c20f15b92be",
     "packages": [
+        {
+            "name": "aelvan/stamp",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aelvan/Stamp-Craft.git",
+                "reference": "0f7fddce013564f10adc20ff871184c653f4df36"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aelvan/Stamp-Craft/zipball/0f7fddce013564f10adc20ff871184c653f4df36",
+                "reference": "0f7fddce013564f10adc20ff871184c653f4df36",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Stamp",
+                "handle": "stamp",
+                "schemaVersion": "2.0.0",
+                "hasCpSettings": false,
+                "hasCpSection": false,
+                "changelogUrl": "https://github.com/aelvan/Stamp-Craft/blob/craft3/CHANGELOG.md",
+                "class": "aelvan\\stamp\\Stamp"
+            },
+            "autoload": {
+                "psr-4": {
+                    "aelvan\\stamp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "André Elvan",
+                    "homepage": "https://www.vaersaagod.no"
+                }
+            ],
+            "description": "A simple plugin for adding timestamps to filenames.",
+            "keywords": [
+                "Craft",
+                "asset-rev",
+                "cms",
+                "craft-plugin",
+                "craftcms",
+                "timestamp"
+            ],
+            "time": "2018-10-06T22:01:35+00:00"
+        },
         {
             "name": "cebe/markdown",
             "version": "1.2.1",

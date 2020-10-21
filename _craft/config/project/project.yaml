@@ -1,4 +1,4 @@
-dateModified: 1603285126
+dateModified: 1603290992
 email:
   fromEmail: michael@michaelrog.com
   fromName: ExtendsConf
@@ -32,6 +32,10 @@ plugins:
                 -
                   - authorUid
                   - 7e4c9637-fbb1-43e0-8b92-6a3da4bf70d6
+  stamp:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
 system:
   edition: solo
   live: true
