@@ -22,23 +22,24 @@
 
 		<span class="line"></span>
 		<span class="line">
-			<span class="lineText">
+			<span class="lineText text-white-op-7">
 				{% verbatim %} {# {% endverbatim %}
 			</span>
 		</span>
 		<span class="line">
-			<span class="lineText">
+			<span class="lineText italic text-white-op-7">
 				<span class="tab"></span>
 				That's a wrap! &mdash; Thank you to our speakers, panelists, and participants. 👏
 			</span>
 		</span>
 	<span class="line">
-			<span class="lineText">
+			<span class="lineText italic text-white-op-7">
 				<span class="tab"></span>
 				Happy trails 'til next time! &hearts;
 			</span>
 		</span>
-		<span class="line"><span class="lineText">
+		<span class="line">
+			<span class="lineText text-white-op-7">
 				{% verbatim %} #} {% endverbatim %}
 			</span></span>
 		<span class="line"></span>
@@ -62,19 +63,19 @@
 		<span class="lineText">Featuring:</span>
 	</p>
 	<p class="line">
-		<span class="lineText"><span class="tab"></span> <a href="https://twitter.com/ben_pylo" class="font-extrabold hover:underline">Ben Croker</a> &mdash; Reactive Twig Components with Sprig</span>
+		<span class="lineText"><span class="tab"></span> <a href="https://twitter.com/ben_pylo" class="font-extrabold underline hover:text-cyan">Ben Croker</a> &mdash; <a href="https://www.youtube.com/watch?v=iRka12bKQeA" class="hover:underline hover:text-cyan">Reactive Twig Components with Sprig</a></span>
 	</p>
 	<p class="line">
-		<span class="lineText"><span class="tab"></span> <a href="https://twitter.com/drifteaur" class="font-extrabold hover:underline">Zoltan Varady</a> &mdash; Smarter Debugging in Craft CMS</span>
+		<span class="lineText"><span class="tab"></span> <a href="https://twitter.com/drifteaur" class="font-extrabold underline hover:text-cyan">Zoltan Varady</a> &mdash; <a href="https://www.youtube.com/watch?v=7QLEk_0VFvU" class="hover:underline hover:text-cyan">Smarter Debugging in Craft CMS</a></span>
 	</p>
 	<p class="line">
-		<span class="lineText"><span class="tab"></span> <a href="https://twitter.com/pixelcave_john" class="font-extrabold hover:underline">John Champ</a> &mdash; Thoughts on Themes & Third-Party Markets</span>
+		<span class="lineText"><span class="tab"></span> <a href="https://twitter.com/pixelcave_john" class="font-extrabold underline hover:text-cyan">John Champ</a> &mdash; <a href="https://www.youtube.com/watch?v=NgHd7rZzN6A" class="hover:underline hover:text-cyan">Thoughts on Themes & Third-Party Markets</a></span>
 	</p>
 	<p class="line">
-		<span class="lineText"><span class="tab"></span> <a href="https://twitter.com/mattrambles" class="font-extrabold hover:underline">Matt Stein</a> &mdash; Project Config, for Skeptics</span>
+		<span class="lineText"><span class="tab"></span> <a href="https://twitter.com/mattrambles" class="font-extrabold underline hover:text-cyan">Matt Stein</a> &mdash; <a href="https://www.youtube.com/watch?v=hdslCgc2MXU" class="hover:underline hover:text-cyan">Project Config, for Skeptics</a></span>
 	</p>
 	<p class="line">
-		<span class="lineText"><span class="tab"></span> <a href="https://marie-manandise.net" class="font-extrabold hover:underline">Marie Manandise</a> &mdash; Accessibility in CMSs... What's stopping us?</span>
+		<span class="lineText"><span class="tab"></span> <a href="https://marie-manandise.net" class="font-extrabold underline hover:text-cyan">Marie Manandise</a> &mdash; <a href="https://www.youtube.com/watch?v=coyt8ey6NRk" class="hover:underline hover:text-cyan">Accessibility in CMSs... What's stopping us?</a></span>
 	</p>
 	<p class="line">
 		<span class="lineText"><span class="tab"></span>The First Ever&trade; Craft Developer AMA</span>
@@ -87,7 +88,25 @@
 	<span class="line"></span>
 
 	<p class="line">
-		<span class="lineText">Questions:</span>
+		<span class="lineText">Missed a talk?</span>
+	</p>
+	<p class="line">
+		<span class="lineText font-extrabold">
+			{% verbatim %}
+            {%
+			<span class="text-gold">do</span> watch
+			<span class="text-cyan">
+				'<a href="https://www.youtube.com/channel/UCVHGu6BBfe_3XyCqYH3JQnQ/" class="underline hover:no-underline">Videos</a>'
+			</span>
+			%}
+            {% endverbatim %}
+		</span>
+	</p>
+
+	<span class="line"></span>
+
+	<p class="line">
+		<span class="lineText">Questions?</span>
 	</p>
 	<p class="line">
 		<span class="lineText font-extrabold">
@@ -95,7 +114,7 @@
             {%
 			<span class="text-gold">do</span> contact
 			<span class="text-cyan">
-				'<a href="mailto:team@extendsconf.com" class="hover:underline">team@extendsconf.com</a>'
+				'<a href="mailto:team@extendsconf.com" class="underline hover:no-underline">team@extendsconf.com</a>'
 			</span>
 			%}
             {% endverbatim %}
@@ -131,23 +150,13 @@
 
 	<p class="line">
 		<span class="lineText italic text-white-op-3">
-			Brought to you by <a href="https://twitter.com/jalendport" class="hover:underline">@jalendport</a>
-			and <a href="https://twitter.com/michaelrog" class="hover:underline">@michaelrog</a>.
+			Brought to you by <a href="https://twitter.com/jalendport" class="underline hover:text-cyan">@jalendport</a>
+			and <a href="https://twitter.com/michaelrog" class="underline hover:text-cyan">@michaelrog</a>.
 		</span>
 	</p>
 
+	{% for i in range(1,10) %}
 	<span class="line"></span>
-	<span class="line"></span>
-	<span class="line"></span>
-	<span class="line"></span>
-	<span class="line"></span>
-	<span class="line"></span>
-	<span class="line"></span>
-	<span class="line"></span>
-	<span class="line"></span>
-	<span class="line"></span>
-	<span class="line"></span>
-	<span class="line"></span>
-	<span class="line"></span>
+	{% endfor %}
 
 {% endblock %}
