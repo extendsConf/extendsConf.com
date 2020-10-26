@@ -47,3 +47,10 @@ input:invalid ~ input[type=submit] {
 	@apply bg-black-op-1 text-white-op-3 cursor-not-allowed;
 	pointer-events: none;
 }
+
+a.underline {
+	text-decoration-color: theme('colors.white.op-3');
+	&:hover {
+		text-decoration-color: theme('colors.cyan.default');
+	}
+}

@@ -63,19 +63,19 @@
 		<span class="lineText">Featuring:</span>
 	</p>
 	<p class="line">
-		<span class="lineText"><span class="tab"></span> <a href="https://twitter.com/ben_pylo" class="font-extrabold underline hover:text-cyan">Ben Croker</a> &mdash; <a href="https://www.youtube.com/watch?v=iRka12bKQeA" class="hover:underline hover:text-cyan">Reactive Twig Components with Sprig</a></span>
+		<span class="lineText"><span class="tab"></span> <a href="https://twitter.com/ben_pylo" class="font-extrabold underline hover:text-cyan">Ben Croker</a> &mdash; <a href="https://www.youtube.com/watch?v=iRka12bKQeA" class="underline hover:text-cyan">Reactive Twig Components with Sprig</a></span>
 	</p>
 	<p class="line">
-		<span class="lineText"><span class="tab"></span> <a href="https://twitter.com/drifteaur" class="font-extrabold underline hover:text-cyan">Zoltan Varady</a> &mdash; <a href="https://www.youtube.com/watch?v=7QLEk_0VFvU" class="hover:underline hover:text-cyan">Smarter Debugging in Craft CMS</a></span>
+		<span class="lineText"><span class="tab"></span> <a href="https://twitter.com/drifteaur" class="font-extrabold underline hover:text-cyan">Zoltan Varady</a> &mdash; <a href="https://www.youtube.com/watch?v=7QLEk_0VFvU" class="underline hover:text-cyan">Smarter Debugging in Craft CMS</a></span>
 	</p>
 	<p class="line">
-		<span class="lineText"><span class="tab"></span> <a href="https://twitter.com/pixelcave_john" class="font-extrabold underline hover:text-cyan">John Champ</a> &mdash; <a href="https://www.youtube.com/watch?v=NgHd7rZzN6A" class="hover:underline hover:text-cyan">Thoughts on Themes & Third-Party Markets</a></span>
+		<span class="lineText"><span class="tab"></span> <a href="https://twitter.com/pixelcave_john" class="font-extrabold underline hover:text-cyan">John Champ</a> &mdash; <a href="https://www.youtube.com/watch?v=NgHd7rZzN6A" class="underline hover:text-cyan">Thoughts on Themes & Third-Party Markets</a></span>
 	</p>
 	<p class="line">
-		<span class="lineText"><span class="tab"></span> <a href="https://twitter.com/mattrambles" class="font-extrabold underline hover:text-cyan">Matt Stein</a> &mdash; <a href="https://www.youtube.com/watch?v=hdslCgc2MXU" class="hover:underline hover:text-cyan">Project Config, for Skeptics</a></span>
+		<span class="lineText"><span class="tab"></span> <a href="https://twitter.com/mattrambles" class="font-extrabold underline hover:text-cyan">Matt Stein</a> &mdash; <a href="https://www.youtube.com/watch?v=hdslCgc2MXU" class="underline hover:text-cyan">Project Config, for Skeptics</a></span>
 	</p>
 	<p class="line">
-		<span class="lineText"><span class="tab"></span> <a href="https://marie-manandise.net" class="font-extrabold underline hover:text-cyan">Marie Manandise</a> &mdash; <a href="https://www.youtube.com/watch?v=coyt8ey6NRk" class="hover:underline hover:text-cyan">Accessibility in CMSs... What's stopping us?</a></span>
+		<span class="lineText"><span class="tab"></span> <a href="https://marie-manandise.net" class="font-extrabold underline hover:text-cyan">Marie Manandise</a> &mdash; <a href="https://www.youtube.com/watch?v=coyt8ey6NRk" class="underline hover:text-cyan">Accessibility in CMSs... What's stopping us?</a></span>
 	</p>
 	<p class="line">
 		<span class="lineText"><span class="tab"></span>The First Ever&trade; Craft Developer AMA</span>
@@ -92,14 +92,12 @@
 	</p>
 	<p class="line">
 		<span class="lineText font-extrabold">
-			{% verbatim %}
-            {%
+			{% verbatim %} {% {% endverbatim %}
 			<span class="text-gold">do</span> watch
 			<span class="text-cyan">
-				'<a href="https://www.youtube.com/channel/UCVHGu6BBfe_3XyCqYH3JQnQ/" class="underline hover:no-underline">Videos</a>'
+				'<a href="{{ url('videos') }}" class="underline hover:no-underline">Videos</a>'
 			</span>
-			%}
-            {% endverbatim %}
+			{% verbatim %} %} {% endverbatim %}
 		</span>
 	</p>
 
